@@ -1,0 +1,22 @@
+//
+//  VedioView.h
+//  GolfDoctors
+//
+//  Created by APPLE apple on 11/15/11.
+//  Copyright (c) 2011 openxcel. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "VedioDetail.h"
+
+@class VedioDetail;
+@interface VedioView : UIViewController<UITableViewDelegate>
+{
+	NSMutableArray *vedioArray;
+	IBOutlet UITableView *vedioTbl;
+    VedioDetail *vediodetailObj;
+}
+
+@property (nonatomic, retain) NSMutableArray *vedioArray;
+@property (nonatomic, retain) UITableView *vedioTbl;
+@end

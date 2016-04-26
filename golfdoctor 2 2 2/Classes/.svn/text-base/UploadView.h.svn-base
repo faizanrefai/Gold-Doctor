@@ -1,0 +1,25 @@
+//
+//  UploadView.h
+//  GolfDoctors
+//
+//  Created by APPLE apple on 11/15/11.
+//  Copyright (c) 2011 openxcel. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface UploadView : UIViewController<UIActionSheetDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+{
+    UIImagePickerController *picker;
+    IBOutlet UIButton *vedioBtn;
+	IBOutlet UIButton *btnUpload;
+	IBOutlet UIButton *btnUVideo;
+}
+@property (nonatomic, retain) UIButton *btnUVideo;
+@property (nonatomic, retain) UIButton *btnUpload;
+@property (nonatomic, retain) UIButton *vedioBtn;
+@property (nonatomic, retain)UIImagePickerController *picker;
+-(IBAction)getVedio:(id)sender;
+-(IBAction)UploadVedio:(id)sender;
+-(IBAction)buyClicked :(id)sender;
+@end

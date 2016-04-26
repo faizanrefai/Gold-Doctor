@@ -1,0 +1,377 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		183E9E851472A32500C79AFB /* VedioDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E9E831472A32400C79AFB /* VedioDetail.m */; };
+		183E9E861472A32500C79AFB /* VedioDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183E9E841472A32500C79AFB /* VedioDetail.xib */; };
+		183E9E8A1472A34200C79AFB /* VedioCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E9E881472A34100C79AFB /* VedioCustomCell.m */; };
+		183E9E8B1472A34200C79AFB /* VedioCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183E9E891472A34200C79AFB /* VedioCustomCell.xib */; };
+		183E9E8E1472A84900C79AFB /* rated.png in Resources */ = {isa = PBXBuildFile; fileRef = 183E9E8C1472A84900C79AFB /* rated.png */; };
+		183E9E8F1472A84900C79AFB /* unrated.png in Resources */ = {isa = PBXBuildFile; fileRef = 183E9E8D1472A84900C79AFB /* unrated.png */; };
+		183E9E911472AA2900C79AFB /* video.png in Resources */ = {isa = PBXBuildFile; fileRef = 183E9E901472AA2900C79AFB /* video.png */; };
+		185D4BD21472881300514C13 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 185D4BD01472881300514C13 /* LoginView.m */; };
+		185D4BD31472881300514C13 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185D4BD11472881300514C13 /* LoginView.xib */; };
+		1864D5EE147390BF007956E0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1864D5ED147390BF007956E0 /* SystemConfiguration.framework */; };
+		1864D5F2147390CA007956E0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1864D5F1147390CA007956E0 /* QuartzCore.framework */; };
+		1864D65214739C4F007956E0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1864D65114739C4F007956E0 /* MediaPlayer.framework */; };
+		1864D6E114739DEF007956E0 /* sample1.mov in Resources */ = {isa = PBXBuildFile; fileRef = 1864D6E014739DEF007956E0 /* sample1.mov */; };
+		186771BD14727F4E00757B06 /* SignUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186771B214727F4E00757B06 /* SignUpView.m */; };
+		186771BE14727F4E00757B06 /* SignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186771B314727F4E00757B06 /* SignUpView.xib */; };
+		186771BF14727F4E00757B06 /* SearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186771B514727F4E00757B06 /* SearchView.m */; };
+		186771C014727F4E00757B06 /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186771B614727F4E00757B06 /* SearchView.xib */; };
+		186771C114727F4E00757B06 /* VedioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186771B814727F4E00757B06 /* VedioView.m */; };
+		186771C214727F4E00757B06 /* VedioView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186771B914727F4E00757B06 /* VedioView.xib */; };
+		186771C314727F4E00757B06 /* UploadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186771BB14727F4E00757B06 /* UploadView.m */; };
+		186771C414727F4E00757B06 /* UploadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186771BC14727F4E00757B06 /* UploadView.xib */; };
+		1895D9E31473B089006AF487 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1895D9E21473B089006AF487 /* CoreFoundation.framework */; };
+		1D3623260D0F684500981E51 /* GolfDoctorProjectAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* GolfDoctorProjectAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
+		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
+		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
+		28F335F11007B36200424DE2 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F335F01007B36200424DE2 /* RootViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		183E9E821472A32400C79AFB /* VedioDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VedioDetail.h; sourceTree = "<group>"; };
+		183E9E831472A32400C79AFB /* VedioDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VedioDetail.m; sourceTree = "<group>"; };
+		183E9E841472A32500C79AFB /* VedioDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VedioDetail.xib; sourceTree = "<group>"; };
+		183E9E871472A34100C79AFB /* VedioCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VedioCustomCell.h; sourceTree = "<group>"; };
+		183E9E881472A34100C79AFB /* VedioCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VedioCustomCell.m; sourceTree = "<group>"; };
+		183E9E891472A34200C79AFB /* VedioCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VedioCustomCell.xib; sourceTree = "<group>"; };
+		183E9E8C1472A84900C79AFB /* rated.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rated.png; sourceTree = "<group>"; };
+		183E9E8D1472A84900C79AFB /* unrated.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unrated.png; sourceTree = "<group>"; };
+		183E9E901472AA2900C79AFB /* video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video.png; sourceTree = "<group>"; };
+		185D4BCF1472881300514C13 /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		185D4BD01472881300514C13 /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		185D4BD11472881300514C13 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		1864D5ED147390BF007956E0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1864D5F1147390CA007956E0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1864D65114739C4F007956E0 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		1864D6E014739DEF007956E0 /* sample1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = sample1.mov; sourceTree = "<group>"; };
+		186771B114727F4E00757B06 /* SignUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpView.h; sourceTree = "<group>"; };
+		186771B214727F4E00757B06 /* SignUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpView.m; sourceTree = "<group>"; };
+		186771B314727F4E00757B06 /* SignUpView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpView.xib; sourceTree = "<group>"; };
+		186771B414727F4E00757B06 /* SearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchView.h; sourceTree = "<group>"; };
+		186771B514727F4E00757B06 /* SearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchView.m; sourceTree = "<group>"; };
+		186771B614727F4E00757B06 /* SearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
+		186771B714727F4E00757B06 /* VedioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VedioView.h; sourceTree = "<group>"; };
+		186771B814727F4E00757B06 /* VedioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VedioView.m; sourceTree = "<group>"; };
+		186771B914727F4E00757B06 /* VedioView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VedioView.xib; sourceTree = "<group>"; };
+		186771BA14727F4E00757B06 /* UploadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadView.h; sourceTree = "<group>"; };
+		186771BB14727F4E00757B06 /* UploadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadView.m; sourceTree = "<group>"; };
+		186771BC14727F4E00757B06 /* UploadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UploadView.xib; sourceTree = "<group>"; };
+		1895D9E21473B089006AF487 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* GolfDoctorProjectAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GolfDoctorProjectAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* GolfDoctorProjectAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GolfDoctorProjectAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* GolfDoctorProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GolfDoctorProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28A0AAE50D9B0CCF005BE974 /* GolfDoctorProject_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GolfDoctorProject_Prefix.pch; sourceTree = "<group>"; };
+		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		28F335F01007B36200424DE2 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* GolfDoctorProject-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GolfDoctorProject-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1895D9E31473B089006AF487 /* CoreFoundation.framework in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
+				1864D5EE147390BF007956E0 /* SystemConfiguration.framework in Frameworks */,
+				1864D5F2147390CA007956E0 /* QuartzCore.framework in Frameworks */,
+				1864D65214739C4F007956E0 /* MediaPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				186771B014727F4E00757B06 /* TabClasses */,
+				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
+				28C286E00D94DF7D0034E888 /* RootViewController.m */,
+				1D3623240D0F684500981E51 /* GolfDoctorProjectAppDelegate.h */,
+				1D3623250D0F684500981E51 /* GolfDoctorProjectAppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1864D6DF14739DEF007956E0 /* Vedio */ = {
+			isa = PBXGroup;
+			children = (
+				1864D6E014739DEF007956E0 /* sample1.mov */,
+			);
+			path = Vedio;
+			sourceTree = "<group>";
+		};
+		186771B014727F4E00757B06 /* TabClasses */ = {
+			isa = PBXGroup;
+			children = (
+				186771B114727F4E00757B06 /* SignUpView.h */,
+				186771B214727F4E00757B06 /* SignUpView.m */,
+				186771B314727F4E00757B06 /* SignUpView.xib */,
+				185D4BCF1472881300514C13 /* LoginView.h */,
+				185D4BD01472881300514C13 /* LoginView.m */,
+				185D4BD11472881300514C13 /* LoginView.xib */,
+				183E9E821472A32400C79AFB /* VedioDetail.h */,
+				183E9E831472A32400C79AFB /* VedioDetail.m */,
+				183E9E841472A32500C79AFB /* VedioDetail.xib */,
+				183E9E871472A34100C79AFB /* VedioCustomCell.h */,
+				183E9E881472A34100C79AFB /* VedioCustomCell.m */,
+				183E9E891472A34200C79AFB /* VedioCustomCell.xib */,
+				186771B414727F4E00757B06 /* SearchView.h */,
+				186771B514727F4E00757B06 /* SearchView.m */,
+				186771B614727F4E00757B06 /* SearchView.xib */,
+				186771B714727F4E00757B06 /* VedioView.h */,
+				186771B814727F4E00757B06 /* VedioView.m */,
+				186771B914727F4E00757B06 /* VedioView.xib */,
+				186771BA14727F4E00757B06 /* UploadView.h */,
+				186771BB14727F4E00757B06 /* UploadView.m */,
+				186771BC14727F4E00757B06 /* UploadView.xib */,
+			);
+			name = TabClasses;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* GolfDoctorProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				28A0AAE50D9B0CCF005BE974 /* GolfDoctorProject_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1864D6DF14739DEF007956E0 /* Vedio */,
+				183E9E901472AA2900C79AFB /* video.png */,
+				183E9E8C1472A84900C79AFB /* rated.png */,
+				183E9E8D1472A84900C79AFB /* unrated.png */,
+				28F335F01007B36200424DE2 /* RootViewController.xib */,
+				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* GolfDoctorProject-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1895D9E21473B089006AF487 /* CoreFoundation.framework */,
+				1864D65114739C4F007956E0 /* MediaPlayer.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
+				1864D5ED147390BF007956E0 /* SystemConfiguration.framework */,
+				1864D5F1147390CA007956E0 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* GolfDoctorProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "GolfDoctorProject" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GolfDoctorProject;
+			productName = GolfDoctorProject;
+			productReference = 1D6058910D05DD3D006BFB54 /* GolfDoctorProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GolfDoctorProject" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* GolfDoctorProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
+				28F335F11007B36200424DE2 /* RootViewController.xib in Resources */,
+				186771BE14727F4E00757B06 /* SignUpView.xib in Resources */,
+				186771C014727F4E00757B06 /* SearchView.xib in Resources */,
+				186771C214727F4E00757B06 /* VedioView.xib in Resources */,
+				186771C414727F4E00757B06 /* UploadView.xib in Resources */,
+				185D4BD31472881300514C13 /* LoginView.xib in Resources */,
+				183E9E861472A32500C79AFB /* VedioDetail.xib in Resources */,
+				183E9E8B1472A34200C79AFB /* VedioCustomCell.xib in Resources */,
+				183E9E8E1472A84900C79AFB /* rated.png in Resources */,
+				183E9E8F1472A84900C79AFB /* unrated.png in Resources */,
+				183E9E911472AA2900C79AFB /* video.png in Resources */,
+				1864D6E114739DEF007956E0 /* sample1.mov in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* GolfDoctorProjectAppDelegate.m in Sources */,
+				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
+				186771BD14727F4E00757B06 /* SignUpView.m in Sources */,
+				186771BF14727F4E00757B06 /* SearchView.m in Sources */,
+				186771C114727F4E00757B06 /* VedioView.m in Sources */,
+				186771C314727F4E00757B06 /* UploadView.m in Sources */,
+				185D4BD21472881300514C13 /* LoginView.m in Sources */,
+				183E9E851472A32500C79AFB /* VedioDetail.m in Sources */,
+				183E9E8A1472A34200C79AFB /* VedioCustomCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GolfDoctorProject_Prefix.pch;
+				INFOPLIST_FILE = "GolfDoctorProject-Info.plist";
+				PRODUCT_NAME = GolfDoctorProject;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GolfDoctorProject_Prefix.pch;
+				INFOPLIST_FILE = "GolfDoctorProject-Info.plist";
+				PRODUCT_NAME = GolfDoctorProject;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "GolfDoctorProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GolfDoctorProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

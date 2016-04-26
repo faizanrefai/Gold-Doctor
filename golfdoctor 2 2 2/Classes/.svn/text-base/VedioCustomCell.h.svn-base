@@ -1,0 +1,31 @@
+//
+//  VedioCustomCell.h
+//  GolfDoctorProject
+//
+//  Created by APPLE apple on 11/15/11.
+//  Copyright (c) 2011 openxcel. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "SearchView.h"
+
+@class SearchView;
+@interface VedioCustomCell : UITableViewCell
+{
+    IBOutlet UIButton *rat1;
+    IBOutlet UIButton *rat2;
+    IBOutlet UIButton *rat3;
+    IBOutlet UIButton *rat4;
+    IBOutlet UIButton *rat5;
+    SearchView *parentObj;
+}
+
+@property (nonatomic, retain) UIButton *rat1;
+@property (nonatomic, retain) UIButton *rat2;
+@property (nonatomic, retain) UIButton *rat3;
+@property (nonatomic, retain) UIButton *rat4;
+@property (nonatomic, retain) UIButton *rat5;
+
+-(void)setParentObj:(SearchView*)obj;
+
+@end

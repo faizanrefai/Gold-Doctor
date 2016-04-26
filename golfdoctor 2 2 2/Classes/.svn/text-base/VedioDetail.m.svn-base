@@ -1,0 +1,202 @@
+//
+//  VedioDetail.m
+//  GolfDoctorProject
+//
+//  Created by APPLE apple on 11/15/11.
+//  Copyright (c) 2011 openxcel. All rights reserved.
+//
+
+#import "VedioDetail.h"
+
+@implementation VedioDetail
+@synthesize commentsTbl,commentsArray,TxtComment,rat1,rat2,rat3,rat4,rat5;
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+- (void)didReceiveMemoryWarning
+{
+    // Releases the view if it doesn't have a superview.
+    [super didReceiveMemoryWarning];
+    
+    // Release any cached data, images, etc that aren't in use.
+}
+
+#pragma mark - View lifecycle
+
+- (void)viewDidLoad
+{
+	self.title = @"Vedio Detail";
+    commentsArray = [[NSMutableArray alloc] init];
+    
+    [commentsArray addObject:@"Very nicew vedio"];
+    [commentsArray addObject:@"inspired by your vedio, thanks."];
+    
+	self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+    [super viewDidLoad];
+    // Do any additional setup after loading the view from its nib.
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    
+}
+
+-(IBAction)rateBtnClick:(id)sender
+{
+    UIButton *btn = (UIButton *)sender;
+    
+    if(btn.selected == YES)
+    {
+        [btn setSelected:NO];
+		if (btn == rat4) {
+			[rat5 setSelected:NO];
+		}
+		if (btn == rat3) {
+			[rat5 setSelected:NO];
+			[rat4 setSelected:NO];
+		}
+		if (btn == rat2) {
+			[rat5 setSelected:NO];
+			[rat4 setSelected:NO];
+			[rat3 setSelected:NO];
+		}
+		if (btn == rat1) {
+			[rat5 setSelected:NO];
+			[rat4 setSelected:NO];
+			[rat3 setSelected:NO];
+			[rat2 setSelected:NO];
+		}
+		
+    }
+    else
+    {
+        [btn setSelected:YES];
+		if (btn == rat5) {
+			[rat1 setSelected:YES];
+			[rat4 setSelected:YES];
+			[rat3 setSelected:YES];
+			[rat2 setSelected:YES];
+		}
+		if (btn == rat4) {
+			[rat1 setSelected:YES];
+			[rat3 setSelected:YES];
+			[rat2 setSelected:YES];
+		}
+		
+		if (btn == rat3) {
+			[rat2 setSelected:YES];
+			[rat1 setSelected:YES];
+		}
+		if (btn == rat2) {
+			[rat1 setSelected:YES];
+		}
+				
+    }
+    
+}
+
+-(IBAction)playVedio:(id)sender
+{
+	/*
+	NSURL *url = [NSURL URLWithString:[[NSBundle mainBundle] pathForResource:@"sample1" ofType:@"mov" inDirectory:@"Vedio"]];
+	MPMoviePlayerController *player = [[MPMoviePlayerController alloc] initWithContentURL:url];
+	[[player view] setFrame:[self.view bounds]]; // Frame must match parent view
+	[self.view addSubview:[player view]];
+	[player play];
+	[player release];
+	*/
+	
+	NSString *url = [[NSBundle mainBundle] 
+					 pathForResource:@"sample1" 
+					 ofType:@"mov"];
+	
+    MPMoviePlayerViewController *playerViewController = 
+    [[MPMoviePlayerViewController alloc] 
+	 initWithContentURL:[NSURL fileURLWithPath:url]];
+    
+    [[NSNotificationCenter defaultCenter] 
+	 addObserver:self
+	 selector:@selector(movieFinishedCallback:)
+	 name:MPMoviePlayerPlaybackDidFinishNotification
+	 object:[playerViewController moviePlayer]];
+    
+    [self presentModalViewController:playerViewController animated:NO];
+    
+    //---play movie---
+    MPMoviePlayerController *player = [playerViewController moviePlayer];
+    [player play];
+	
+	
+}
+
+- (void) movieFinishedCallback:(NSNotification*) aNotification {
+    MPMoviePlayerController *player = [aNotification object];
+    [[NSNotificationCenter defaultCenter] 
+	 removeObserver:self
+	 name:MPMoviePlayerPlaybackDidFinishNotification
+	 object:player];    
+      //[player autorelease];  
+    //[self dismissModalViewControllerAnimated:YES];
+    
+}
+
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    // Return the number of sections.
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [commentsArray count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+   static NSString *CellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    if (cell == nil) {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+    }
+    
+    cell.textLabel.text = [commentsArray objectAtIndex:indexPath.row];
+    
+    return cell;
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+-(IBAction)AddComment:(id)sender
+{
+    [commentsArray addObject:TxtComment.text];
+    [commentsTbl reloadData];
+	TxtComment.text = @"";
+	[TxtComment resignFirstResponder];
+}
+
+- (void)viewDidUnload
+{
+    [super viewDidUnload];
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    // Return YES for supported orientations
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+@end

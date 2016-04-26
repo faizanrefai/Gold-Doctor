@@ -1,0 +1,199 @@
+//
+//  SearchView.m
+//  GolfDoctors
+//
+//  Created by APPLE apple on 11/15/11.
+//  Copyright (c) 2011 openxcel. All rights reserved.
+//
+
+#import "SearchView.h"
+#import "VedioCustomCell.h"
+
+@implementation SearchView
+@synthesize listTbl,vedioArray,but1,but2,but3,but4,but5,searchBar;
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+- (void)didReceiveMemoryWarning
+{
+    // Releases the view if it doesn't have a superview.
+    [super didReceiveMemoryWarning];
+    
+    // Release any cached data, images, etc that aren't in use.
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+	return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+	return [vedioArray count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    
+    
+     static NSString *CellIdentifier = @"VedioCustomCell";
+     
+     VedioCustomCell *cell = (VedioCustomCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+     if (cell == nil) {			
+     NSArray *nib = nil;		
+    
+     nib = [[NSBundle mainBundle] loadNibNamed:@"VedioCustomCell" owner:nil options:nil];
+     cell = [nib objectAtIndex:0];	
+     [cell setParentObj:self];
+     
+         [cell.rat1 addTarget:self action:@selector(rateBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+          [cell.rat2 addTarget:self action:@selector(rateBtnClick:) forControlEvents:UIControlEventTouchUpInside]    ;
+          [cell.rat3 addTarget:self action:@selector(rateBtnClick:) forControlEvents:UIControlEventTouchUpInside]    ;
+          [cell.rat4 addTarget:self action:@selector(rateBtnClick:) forControlEvents:UIControlEventTouchUpInside]    ;
+          [cell.rat5 addTarget:self action:@selector(rateBtnClick:) forControlEvents:UIControlEventTouchUpInside]    ;
+         
+		 
+		 but1 = cell.rat1;
+		 but2 = cell.rat2;
+		 but3 = cell.rat3;
+		 but4 = cell.rat4;
+		 but5 = cell.rat5;
+		 
+     //[cell setParentObject:self];
+     }	
+     //        else
+     //        {
+     cell.tag= indexPath.row;
+    
+    
+    
+    NSLog(@"%i",cell.tag);
+     //[cell setData];
+     cell.backgroundColor = [UIColor clearColor];
+     cell.selectionStyle = FALSE;
+     
+	return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.navigationController pushViewController:vediodetailObj animated:YES];
+}
+
+-(IBAction)rateBtnClick:(id)sender
+{
+    UIButton *btn = (UIButton *)sender;
+    
+	
+	
+    if(btn.selected == YES)
+    {
+        [btn setSelected:NO];
+		if (btn.tag == 4) {
+			[but5 setSelected:NO];
+			NSLog(@"rat5");
+		}
+		if (btn.tag == 3) {
+			NSLog(@"rat5");
+			[but5 setSelected:NO];
+			[but4 setSelected:NO];
+		}
+		if (btn.tag == 2) {
+			NSLog(@"rat5");
+			[but5 setSelected:NO];
+			[but4 setSelected:NO];
+			[but3 setSelected:NO];
+		}
+		if (btn.tag == 1) {
+			NSLog(@"rat5");
+			[but5 setSelected:NO];
+			[but4 setSelected:NO];
+			[but3 setSelected:NO];
+			[but2 setSelected:NO];
+		}
+		
+    }
+    else
+    {
+        [btn setSelected:YES];
+    }
+    
+}
+
+-(void)searchwithKeyWord:(UISearchBar*)SearchB{
+	
+    
+		
+}
+
+
+-(BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar{
+	[searchBar setShowsCancelButton:YES animated:YES];
+	searchBar.showsCancelButton=YES;
+	return YES;
+}
+-(BOOL)searchBar:(UISearchBar *)searchBar shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text{
+	
+    [self performSelector:@selector(searchwithKeyWord:) withObject:searchBar afterDelay:0.2];
+	
+	return YES;
+}
+-(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
+	[searchBar setShowsCancelButton:NO animated:YES];
+	[searchBar resignFirstResponder];
+	
+}
+-(void)searchBarCancelButtonClicked:(UISearchBar *)searchBar{
+	[searchBar resignFirstResponder];
+	[searchBar setShowsCancelButton:NO animated:YES];
+}
+-(BOOL)searchBarShouldEndEditing:(UISearchBar *)searchBar{
+	
+	[self searchwithKeyWord:searchBar];
+	return YES;
+}
+
+
+
+#pragma mark - View lifecycle
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	self.title = @"Tips";
+    vediodetailObj = [[VedioDetail alloc] initWithNibName:@"VedioDetail" bundle:nil];
+	vedioArray = [[NSMutableArray alloc] init];
+	
+	[vedioArray addObject:@"video1"];
+	[vedioArray addObject:@"video2"];
+	[vedioArray addObject:@"video3"];
+	[vedioArray addObject:@"video4"];
+	[vedioArray addObject:@"video5"];
+	
+    listTbl.rowHeight = 130.0;
+    
+	self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+    // Do any additional setup after loading the view from its nib.
+}
+
+- (void)viewDidUnload
+{
+    [super viewDidUnload];
+	
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    // Return YES for supported orientations
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+@end

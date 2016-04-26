@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	183E9E821472A32400C79AFB /* VedioDetail.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1293, 1807}}";
+			sepNavSelRange = "{168, 35}";
+			sepNavVisRange = "{0, 950}";
+		};
+	};
+	183E9E831472A32400C79AFB /* VedioDetail.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1174, 10673}}";
+			sepNavSelRange = "{5166, 0}";
+			sepNavVisRange = "{4967, 1109}";
+		};
+	};
+	183E9E871472A34100C79AFB /* VedioCustomCell.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {755, 520}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 800}";
+		};
+	};
+	183E9E881472A34100C79AFB /* VedioCustomCell.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {845, 650}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 829}";
+		};
+	};
+	185D4BD01472881300514C13 /* LoginView.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1643, 2431}}";
+			sepNavSelRange = "{4382, 0}";
+			sepNavVisRange = "{3334, 1375}";
+		};
+	};
+	186771B414727F4E00757B06 /* SearchView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {901, 871}}";
+			sepNavSelRange = "{196, 0}";
+			sepNavVisRange = "{0, 936}";
+		};
+	};
+	186771B514727F4E00757B06 /* SearchView.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1181, 6461}}";
+			sepNavSelRange = "{2897, 0}";
+			sepNavVisRange = "{0, 924}";
+		};
+	};
+	186771B814727F4E00757B06 /* VedioView.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {2273, 6305}}";
+			sepNavSelRange = "{4095, 0}";
+			sepNavVisRange = "{3386, 1275}";
+		};
+	};
+	186771BB14727F4E00757B06 /* UploadView.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1104, 4147}}";
+			sepNavSelRange = "{469, 0}";
+			sepNavVisRange = "{0, 873}";
+		};
+	};
+	1D3623240D0F684500981E51 /* GolfDoctorProjectAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {755, 476}}";
+			sepNavSelRange = "{421, 0}";
+			sepNavVisRange = "{0, 680}";
+		};
+	};
+	1D3623250D0F684500981E51 /* GolfDoctorProjectAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1965, 1417}}";
+			sepNavSelRange = "{872, 29}";
+			sepNavVisRange = "{1488, 1589}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* GolfDoctorProject */ = {
+		activeExec = 0;
+		executables = (
+			8497396814B83BCB0066C779 /* GolfDoctorProject */,
+		);
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 8497396814B83BCB0066C779 /* GolfDoctorProject */;
+		activeSDKPreference = iphoneos4.2;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* GolfDoctorProject */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* GolfDoctorProject */,
+		);
+		breakpoints = (
+			848FEEDA14D8295700F6D35A /* VedioDetail.m:272 */,
+			84905E59152186B7004EE886 /* VedioDetail.m:201 */,
+			84905E5B152186BF004EE886 /* VedioDetail.m:111 */,
+			84905E67152186E4004EE886 /* VedioView.m:283 */,
+			84905E7F15218FBE004EE886 /* VedioDetail.m:146 */,
+		);
+		codeSenseManager = 8497398314B83BCE0066C779 /* Code sense */;
+		executables = (
+			8497396814B83BCB0066C779 /* GolfDoctorProject */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					577,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					537,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 354526072;
+			PBXWorkspaceStateSaveDate = 354526072;
+		};
+		perUserProjectItems = {
+			84087FB8151861DC00F78839 = 84087FB8151861DC00F78839 /* PBXTextBookmark */;
+			84087FB9151861DC00F78839 = 84087FB9151861DC00F78839 /* PBXTextBookmark */;
+			848FEEDC14D8296100F6D35A = 848FEEDC14D8296100F6D35A /* PBXTextBookmark */;
+			848FEEDE14D8296100F6D35A = 848FEEDE14D8296100F6D35A /* PBXTextBookmark */;
+			84905E5E152186C5004EE886 = 84905E5E152186C5004EE886 /* PBXTextBookmark */;
+			84905E60152186C5004EE886 = 84905E60152186C5004EE886 /* PBXTextBookmark */;
+			84905E8115218FCE004EE886 = 84905E8115218FCE004EE886 /* PBXTextBookmark */;
+			84905E8215218FCE004EE886 = 84905E8215218FCE004EE886 /* PBXTextBookmark */;
+			84905ECC15219B2C004EE886 = 84905ECC15219B2C004EE886 /* PBXTextBookmark */;
+			84905F271521A37D004EE886 /* PBXTextBookmark */ = 84905F271521A37D004EE886 /* PBXTextBookmark */;
+			84905F2D1521C234004EE886 /* PBXTextBookmark */ = 84905F2D1521C234004EE886 /* PBXTextBookmark */;
+			8499673714BB1489006BF5FD = 8499673714BB1489006BF5FD /* PBXTextBookmark */;
+			8499673814BB1489006BF5FD = 8499673814BB1489006BF5FD /* PBXTextBookmark */;
+			84AAA77C151D9C9700665C40 = 84AAA77C151D9C9700665C40 /* PBXBookmark */;
+			84AAA77D151D9C9700665C40 = 84AAA77D151D9C9700665C40 /* PBXTextBookmark */;
+			84AE714214BABCFC006640D4 = 84AE714214BABCFC006640D4 /* PBXTextBookmark */;
+			84AE714B14BAC4C2006640D4 = 84AE714B14BAC4C2006640D4 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 8497398214B83BCE0066C779 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	84087FB8151861DC00F78839 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 183E9E821472A32400C79AFB /* VedioDetail.h */;
+		name = "VedioDetail.h: 10";
+		rLen = 35;
+		rLoc = 168;
+		rType = 0;
+		vrLen = 950;
+		vrLoc = 0;
+	};
+	84087FB9151861DC00F78839 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 186771B414727F4E00757B06 /* SearchView.h */;
+		name = "SearchView.h: 10";
+		rLen = 0;
+		rLoc = 196;
+		rType = 0;
+		vrLen = 936;
+		vrLoc = 0;
+	};
+	848FEEDA14D8295700F6D35A /* VedioDetail.m:272 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 183E9E831472A32400C79AFB /* VedioDetail.m */;
+		functionName = "-addComment_clicked";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 272;
+		location = GolfDoctorProject;
+		modificationTime = 354521256.9885221;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	848FEEDC14D8296100F6D35A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* GolfDoctorProjectAppDelegate.m */;
+		name = "GolfDoctorProjectAppDelegate.m: 38";
+		rLen = 29;
+		rLoc = 872;
+		rType = 0;
+		vrLen = 1589;
+		vrLoc = 1488;
+	};
+	848FEEDE14D8296100F6D35A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 183E9E871472A34100C79AFB /* VedioCustomCell.h */;
+		name = "VedioCustomCell.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 800;
+		vrLoc = 0;
+	};
+	84905E59152186B7004EE886 /* VedioDetail.m:201 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 183E9E831472A32400C79AFB /* VedioDetail.m */;
+		functionName = "-playAudio";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 201;
+		location = GolfDoctorProject;
+		modificationTime = 354521257.0173729;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	84905E5B152186BF004EE886 /* VedioDetail.m:111 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 183E9E831472A32400C79AFB /* VedioDetail.m */;
+		functionName = "-viewWillAppear:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 111;
+		location = GolfDoctorProject;
+		modificationTime = 354521257.042777;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	84905E5E152186C5004EE886 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 185D4BD01472881300514C13 /* LoginView.m */;
+		name = "LoginView.m: 122";
+		rLen = 0;
+		rLoc = 4382;
+		rType = 0;
+		vrLen = 1375;
+		vrLoc = 3334;
+	};
+	84905E60152186C5004EE886 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 183E9E881472A34100C79AFB /* VedioCustomCell.m */;
+		name = "VedioCustomCell.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 829;
+		vrLoc = 0;
+	};
+	84905E67152186E4004EE886 /* VedioView.m:283 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 186771B814727F4E00757B06 /* VedioView.m */;
+		functionName = "-tableView:didSelectRowAtIndexPath:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 283;
+		location = GolfDoctorProject;
+		modificationTime = 354521257.070628;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	84905E7F15218FBE004EE886 /* VedioDetail.m:146 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 183E9E831472A32400C79AFB /* VedioDetail.m */;
+		functionName = "-viewWillAppear:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 146;
+		location = GolfDoctorProject;
+		modificationTime = 354521257.096917;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	84905E8115218FCE004EE886 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 186771B814727F4E00757B06 /* VedioView.m */;
+		name = "VedioView.m: 146";
+		rLen = 0;
+		rLoc = 4095;
+		rType = 0;
+		vrLen = 1275;
+		vrLoc = 3386;
+	};
+	84905E8215218FCE004EE886 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 183E9E831472A32400C79AFB /* VedioDetail.m */;
+		name = "VedioDetail.m: 174";
+		rLen = 0;
+		rLoc = 5170;
+		rType = 0;
+		vrLen = 1235;
+		vrLoc = 3719;
+	};
+	84905ECC15219B2C004EE886 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 183E9E831472A32400C79AFB /* VedioDetail.m */;
+		name = "VedioDetail.m: 174";
+		rLen = 0;
+		rLoc = 5170;
+		rType = 0;
+		vrLen = 1235;
+		vrLoc = 3719;
+	};
+	84905F271521A37D004EE886 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 183E9E831472A32400C79AFB /* VedioDetail.m */;
+		name = "VedioDetail.m: 174";
+		rLen = 0;
+		rLoc = 5170;
+		rType = 0;
+		vrLen = 1235;
+		vrLoc = 3719;
+	};
+	84905F2D1521C234004EE886 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 183E9E831472A32400C79AFB /* VedioDetail.m */;
+		name = "VedioDetail.m: 173";
+		rLen = 0;
+		rLoc = 5166;
+		rType = 0;
+		vrLen = 1109;
+		vrLoc = 4967;
+	};
+	8497396814B83BCB0066C779 /* GolfDoctorProject */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = GolfDoctorProject;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	8497398214B83BCE0066C779 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	8497398314B83BCE0066C779 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	8499673714BB1489006BF5FD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		name = "SignUpView.m: 60";
+		rLen = 0;
+		rLoc = 1525;
+		rType = 0;
+		vrLen = 988;
+		vrLoc = 266;
+	};
+	8499673814BB1489006BF5FD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* GolfDoctorProjectAppDelegate.h */;
+		name = "GolfDoctorProjectAppDelegate.h: 21";
+		rLen = 0;
+		rLoc = 421;
+		rType = 0;
+		vrLen = 680;
+		vrLoc = 0;
+	};
+	84AAA77C151D9C9700665C40 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 84087FE51518667C00F78839 /* Icon@2x.png */;
+	};
+	84AAA77D151D9C9700665C40 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 186771B514727F4E00757B06 /* SearchView.m */;
+		name = "SearchView.m: 106";
+		rLen = 0;
+		rLoc = 2897;
+		rType = 0;
+		vrLen = 924;
+		vrLoc = 0;
+	};
+	84AE714214BABCFC006640D4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 186771BB14727F4E00757B06 /* UploadView.m */;
+		name = "UploadView.m: 23";
+		rLen = 0;
+		rLoc = 469;
+		rType = 0;
+		vrLen = 873;
+		vrLoc = 0;
+	};
+	84AE714B14BAC4C2006640D4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		name = "SignUpView.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 878;
+		vrLoc = 0;
+	};
+}

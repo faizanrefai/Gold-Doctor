@@ -1,0 +1,198 @@
+//
+//  SignUpView.m
+//  GolfDoctors
+//
+//  Created by APPLE apple on 11/15/11.
+//  Copyright (c) 2011 openxcel. All rights reserved.
+//
+
+#import "SignUpView.h"
+
+@implementation SignUpView
+@synthesize loginbtn,SignUpbtn,TxtName,TxtBdate,TxtEmail,TxtPass,TxtConfPass,TxtPhnNo;
+@synthesize btnCountry,btnTimeZone,arrayNo,pkrCountry,pkrTime;
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+- (void)didReceiveMemoryWarning
+{
+    // Releases the view if it doesn't have a superview.
+    [super didReceiveMemoryWarning];
+    
+    // Release any cached data, images, etc that aren't in use.
+}
+
+#pragma mark - View lifecycle
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	self.title = @"Sign Up";
+	
+	self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+    // Do any additional setup after loading the view from its nib.
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+	if (textField == TxtEmail || textField == TxtPass || textField == TxtConfPass || textField == TxtPhnNo) {
+		[self animateTextField: textField up: YES];
+	}
+    
+}
+
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+	if (textField == TxtEmail || textField == TxtPass || textField == TxtConfPass || textField == TxtPhnNo) {
+    [self animateTextField: textField up: NO];
+	}
+}
+
+- (void) animateTextField: (UITextField*) textField up: (BOOL) up
+{
+    const int movementDistance = 130; // tweak as needed
+    const float movementDuration = 0.3f; // tweak as needed
+	
+    int movement = (up ? -movementDistance : movementDistance);
+	
+    [UIView beginAnimations: @"anim" context: nil];
+    [UIView setAnimationBeginsFromCurrentState: YES];
+    [UIView setAnimationDuration: movementDuration];
+    self.view.frame = CGRectOffset(self.view.frame, 0, movement);
+    [UIView commitAnimations];
+}
+-(IBAction)countryClicked :(id)sender
+{
+	arrayNo = [[NSMutableArray alloc]initWithObjects:@"India",@"USA",@"UK",nil];
+
+	pkrCountry = [[UIPickerView alloc] init];
+	pkrCountry.delegate=self;
+	pkrCountry.dataSource=self;
+	[pkrCountry setShowsSelectionIndicator:YES];
+	[pkrCountry selectRow:1 inComponent:0 animated:NO];
+	[pkrCountry setTag:1];
+	
+	UIActionSheet *status = [[UIActionSheet alloc] initWithTitle:@"Pickup Time\n\n\n\n\n\n\n\n\n\n\n\n" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"Set" otherButtonTitles:nil];
+	status.actionSheetStyle = UIActionSheetStyleBlackOpaque;
+	[status setBounds:CGRectMake(0, 0, 320, 250)];
+	status.tag=1;
+	[status addSubview:pkrCountry];
+	[status showInView:self.view];
+	[pkrCountry reloadAllComponents];
+}
+-(IBAction)timeZoneClicked :(id)sender
+{
+	arrayNo = [[NSMutableArray alloc]initWithObjects:@"UST",@"IST",@"GMT",nil];
+	
+	pkrTime = [[UIPickerView alloc] init];
+	pkrTime.delegate=self;
+	pkrTime.dataSource=self;
+	[pkrTime setShowsSelectionIndicator:YES];
+	[pkrTime selectRow:1 inComponent:0 animated:NO];
+	[pkrTime setTag:2];
+	
+	UIActionSheet *timeSheet = [[UIActionSheet alloc] initWithTitle:@"Pickup Time\n\n\n\n\n\n\n\n\n\n\n\n" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"Set" otherButtonTitles:nil];
+	timeSheet.actionSheetStyle = UIActionSheetStyleBlackOpaque;
+	[timeSheet setBounds:CGRectMake(0, 0, 320, 250)];
+	timeSheet.tag=2;
+	[timeSheet addSubview:pkrTime];
+	[timeSheet showInView:self.view];
+	[pkrTime reloadAllComponents];
+}
+-(IBAction)SignUp
+{
+	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Info" message:@"Signed Up Successfully" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+	[alert show];
+	[alert release];
+}
+
+-(IBAction)userlogin
+{
+	loginObj = [[LoginView alloc] initWithNibName:@"LoginView" bundle:nil];
+	
+    [self.navigationController pushViewController:loginObj animated:YES];
+}
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+	if (buttonIndex==0)
+	{
+		if (actionSheet.tag==1)
+		{
+			NSString *str = [[NSString alloc] initWithFormat:@"%@",[arrayNo objectAtIndex:[pkrCountry selectedRowInComponent:0]]];
+			
+			[btnCountry setTitle:str forState:UIControlStateNormal];
+			
+		}
+		else if (actionSheet.tag==2)
+		{
+			NSString *str = [[NSString alloc] initWithFormat:@"%@",[arrayNo objectAtIndex:[pkrTime selectedRowInComponent:0]]];
+			
+			[btnTimeZone setTitle:str forState:UIControlStateNormal];
+		}
+
+	}
+}
+
+#pragma mark -
+#pragma mark Picker Methods
+
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView;
+{
+    return 1;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component;
+{
+	NSLog(@"%d",[arrayNo count]);
+    return [arrayNo count];
+}
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
+{
+	return [arrayNo objectAtIndex:row];
+}
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+	if (pickerView.tag==1)
+	{
+		[btnCountry setTitle:[arrayNo objectAtIndex:row] forState:UIControlStateNormal];
+		
+	}
+	else if (pickerView.tag==2)
+	{
+		[btnTimeZone setTitle:[arrayNo objectAtIndex:row] forState:UIControlStateNormal];
+		
+	}
+}
+
+
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+- (void)viewDidUnload
+{
+    [super viewDidUnload];
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    // Return YES for supported orientations
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+@end

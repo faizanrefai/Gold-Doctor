@@ -1,0 +1,54 @@
+//
+//  SignUpView.h
+//  GolfDoctors
+//
+//  Created by APPLE apple on 11/15/11.
+//  Copyright (c) 2011 openxcel. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "LoginView.h"
+
+@class LoginView;
+@interface SignUpView : UIViewController <UIPickerViewDataSource,UIPickerViewDelegate,UIActionSheetDelegate,UITextFieldDelegate>
+{
+	LoginView *loginObj;
+	IBOutlet UIButton *loginbtn;
+	IBOutlet UIButton *SignUpbtn;
+	IBOutlet UITextField *TxtName;
+	IBOutlet UITextField *TxtBdate;
+	IBOutlet UITextField *TxtEmail;
+	IBOutlet UITextField *TxtPass;
+	IBOutlet UITextField *TxtConfPass;
+	IBOutlet UITextField *TxtPhnNo;
+	
+	IBOutlet UIButton *btnCountry; 
+	IBOutlet UIButton *btnTimeZone;
+	
+	NSMutableArray *arrayNo;
+	UIPickerView *pkrCountry;
+	UIPickerView *pkrTime;
+}
+@property (nonatomic ,retain) UIPickerView *pkrTime;
+@property (nonatomic ,retain) UIPickerView *pkrCountry;
+@property (nonatomic, retain) NSMutableArray *arrayNo;
+@property (nonatomic, retain) UIButton *btnCountry; 
+@property (nonatomic, retain) UIButton *btnTimeZone;
+
+@property (nonatomic, retain) UITextField *TxtName;
+@property (nonatomic, retain) UITextField *TxtBdate;
+@property (nonatomic, retain) UITextField *TxtEmail;
+@property (nonatomic, retain) UITextField *TxtPass;
+@property (nonatomic, retain) UITextField *TxtConfPass;
+@property (nonatomic, retain) UITextField *TxtPhnNo;
+
+@property (nonatomic, retain) UIButton *loginbtn;
+@property (nonatomic, retain) UIButton *SignUpbtn;
+-(IBAction)userlogin;
+-(IBAction)SignUp;
+
+-(IBAction)countryClicked :(id)sender;
+-(IBAction)timeZoneClicked :(id)sender;
+
+- (void) animateTextField: (UITextField*) textField up: (BOOL) up;
+@end

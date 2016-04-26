@@ -1,0 +1,128 @@
+//
+//  VedioView.m
+//  GolfDoctors
+//
+//  Created by APPLE apple on 11/15/11.
+//  Copyright (c) 2011 openxcel. All rights reserved.
+//
+
+#import "VedioView.h"
+#import "VedioCustomCell.h"
+
+@implementation VedioView
+@synthesize vedioArray,vedioTbl;
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+- (void)didReceiveMemoryWarning
+{
+    // Releases the view if it doesn't have a superview.
+    [super didReceiveMemoryWarning];
+    
+    // Release any cached data, images, etc that aren't in use.
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+	return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+	return [vedioArray count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *CellIdentifier = @"VedioCustomCell";
+    
+    VedioCustomCell *cell = (VedioCustomCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {			
+        NSArray *nib = nil;		
+        
+        nib = [[NSBundle mainBundle] loadNibNamed:@"VedioCustomCell" owner:nil options:nil];
+        cell = [nib objectAtIndex:0];	
+        [cell setParentObj:self];
+        
+        [cell.rat1 addTarget:self action:@selector(rateBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+        [cell.rat2 addTarget:self action:@selector(rateBtnClick:) forControlEvents:UIControlEventTouchUpInside]    ;
+        [cell.rat3 addTarget:self action:@selector(rateBtnClick:) forControlEvents:UIControlEventTouchUpInside]    ;
+        [cell.rat4 addTarget:self action:@selector(rateBtnClick:) forControlEvents:UIControlEventTouchUpInside]    ;
+        [cell.rat5 addTarget:self action:@selector(rateBtnClick:) forControlEvents:UIControlEventTouchUpInside]    ;
+        
+        //[cell setParentObject:self];
+    }	
+    //        else
+    //        {
+    cell.tag= indexPath.row;
+    
+    
+    
+    NSLog(@"%i",cell.tag);
+    //[cell setData];
+    cell.backgroundColor = [UIColor clearColor];
+    cell.selectionStyle = FALSE;
+	return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.navigationController pushViewController:vediodetailObj animated:YES];
+}
+
+
+-(IBAction)rateBtnClick:(id)sender
+{
+    UIButton *btn = (UIButton *)sender;
+    
+    if(btn.selected == YES)
+    {
+        [btn setSelected:NO];
+    }
+    else
+    {
+        [btn setSelected:YES];
+    }
+    
+}
+
+
+#pragma mark - View lifecycle
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	self.title = @"My Library";
+    vediodetailObj = [[VedioDetail alloc] initWithNibName:@"VedioDetail" bundle:nil];
+	vedioArray = [[NSMutableArray alloc] init];
+	
+	[vedioArray addObject:@"vedio1"];
+	[vedioArray addObject:@"vedio2"];
+	[vedioArray addObject:@"vedio3"];
+	[vedioArray addObject:@"vedio4"];
+	[vedioArray addObject:@"vedio5"];
+    
+    vedioTbl.rowHeight = 130.0;
+    
+	self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+    // Do any additional setup after loading the view from its nib.
+}
+
+- (void)viewDidUnload
+{
+    [super viewDidUnload];
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    // Return YES for supported orientations
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+@end
